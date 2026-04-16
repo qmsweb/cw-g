@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>لعبة التقاط الطعام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="ui-layer">
+            <div id="score-board">النتيجة: <span id="score">0</span></div>
+        </div>
+        
+        <div id="game-over" class="hidden">
+            <h2>انتهت اللعبة!</h2>
+            <p>لقد أكلت شيئاً سيئاً 🤢</p>
+            <button onclick="resetGame()">العب مرة أخرى</button>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
